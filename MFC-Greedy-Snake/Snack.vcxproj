@@ -213,6 +213,10 @@
     <None Include="res\Snake.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\menu_button_activated.png" />
+    <Image Include="res\menu_button_locked.png" />
+    <Image Include="res\menu_button_nonactivated.png" />
+    <Image Include="res\menu_button_overlap.png" />
     <Image Include="res\Snake.ico" />
   </ItemGroup>
   <ItemGroup>

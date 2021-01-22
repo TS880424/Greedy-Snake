@@ -41,7 +41,7 @@ public:
     {
         vector<tuple<Image*, RectF>> vImgInfoPtr;
         int index;
-    } m_menuItems[1];
+    } m_menuItems[2];
 };
 
 class KeyMenuStart

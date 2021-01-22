@@ -78,6 +78,18 @@
     <Image Include="res\Snake.ico">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="res\menu_button_activated.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menu_button_locked.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menu_button_nonactivated.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menu_button_overlap.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Snack.rc">

@@ -2,6 +2,7 @@
 #include "GameMenuPanel.h"
 #include "Game.h"
 
+
 RectF rc;
 GameMenuPanel::GameMenuPanel()
 {
@@ -18,6 +19,17 @@ GameMenuPanel::GameMenuPanel()
         RectF rc(300, 300, static_cast<float>(imgPtr->GetWidth()),
             static_cast<float>(imgPtr->GetHeight()));
         m_menuItems[0].vImgInfoPtr.push_back(make_tuple(imgPtr, rc));
+    }
+    m_menuItems[1].index = 0;
+    TCHAR path[MAX_PATH];
+    CString button_img[] = { L"./res/menu_button_nonactivated.png", L"./res/menu_button_overlap.png" };
+    for (size_t i = 0; i < sizeof(button_img) / sizeof(char*); i++)
+    {
+        _stprintf_s(path, button_img[i]);
+        auto imgPtr = Image::FromFile(path);
+        RectF rc(300, 300, static_cast<float>(imgPtr->GetWidth()),
+            static_cast<float>(imgPtr->GetHeight()));
+        m_menuItems[1].vImgInfoPtr.push_back(make_tuple(imgPtr, rc));
     }
 
 }

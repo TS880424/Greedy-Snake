@@ -338,10 +338,13 @@ void Game::GameRunDrawOnStart(Graphics& gh)
 	gh.DrawRectangle(&myPen, rc);
 
 	m_snake.Draw(gh);
-
-	SetBean(gh);
-
-	Eat(gh);
+	
+	SolidBrush headbrush(Color::Yellow);
+	SolidBrush bodybrush(Color::YellowGreen);
+	Pen pen(Color::Red);
+	
+	gh.FillEllipse(&headbrush, Rect(1, 1, 100, 100));
+	gh.DrawEllipse(&pen, Rect(3, 12, 11, 11));
 	
 }
 

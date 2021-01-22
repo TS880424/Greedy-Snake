@@ -1,0 +1,2 @@
+D:\code_work\c_plus_plus_work\Greedy-Snake\MFC-Greedy-Snake\x64\Debug\Snake.exe
+D:\code_work\c_plus_plus_work\Greedy-Snake\MFC-Greedy-Snake\x64\Debug\Snake.pdb
